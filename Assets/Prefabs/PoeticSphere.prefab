@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 3996217589755205044}
   - component: {fileID: 863110455680047372}
   - component: {fileID: 3971520870306262248}
+  - component: {fileID: 7726880783536149450}
   m_Layer: 0
   m_Name: PoeticSphere
   m_TagString: Untagged
@@ -394,6 +395,43 @@ MonoBehaviour:
   - {fileID: 6967601252331212698, guid: 1300b7ed193eaf24cbd403b09afb069f, type: 3}
   - {fileID: 3678856226671748244, guid: dbd9552bed3b1784a91e57a089b52544, type: 3}
   - {fileID: 2679988961305274512, guid: f9ba98986517e6145b1cf49beb67eebe, type: 3}
+  - {fileID: 3470911004876511417, guid: 8b3e121c883f8f24a8c21a089d759d91, type: 3}
+  - {fileID: 3178359198666230998, guid: 7046afd53d9b5bb408043bc86918eecc, type: 3}
+  unityEvent: {fileID: 7726880783536149450}
+--- !u!114 &7726880783536149450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6425712158292516829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 604381543884093398}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7818395189235926609
 GameObject:
   m_ObjectHideFlags: 0

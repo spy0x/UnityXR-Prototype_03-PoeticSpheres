@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63328dd820e0dee45b81d2263cc7b817, type: 3}
+  m_Name: We Wear the Mask
+  m_EditorClassIdentifier: 
+  title: We Wear the Mask
+  author: PAUL LAURENCE DUNBAR
+  speaker: Rita Dove
+  text: 
+  audioClip: {fileID: 8300000, guid: 55fdc5f0a5809424f9d97004028b1e03, type: 3}
