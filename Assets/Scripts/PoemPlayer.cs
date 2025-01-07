@@ -46,4 +46,6 @@ public class PoemPlayer : MonoBehaviour
         audioSource.clip = null;
         currentPoeticSphere = null;
     }
+    
+    public bool HasPoem => currentPoeticSphere != null;
 }

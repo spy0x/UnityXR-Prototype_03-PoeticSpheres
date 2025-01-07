@@ -716,6 +716,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416717629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8913876749866895839, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+  m_PrefabInstance: {fileID: 1503694391}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541fbf3911be1a94082826f3c77bb2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1476888425
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +821,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 686665116757620537, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: poemPlayer
+      value: 
+      objectReference: {fileID: 1416717629}
+    - target: {fileID: 3612360886269067988, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: poemPlayer
+      value: 
+      objectReference: {fileID: 1416717629}
     - target: {fileID: 8455490480244789186, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
       propertyPath: m_Name
       value: OVRCameraRig Variant
