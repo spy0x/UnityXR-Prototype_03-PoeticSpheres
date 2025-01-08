@@ -11398,6 +11398,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8867156761827330381, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867156761827330381, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8913876749866895839, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
       propertyPath: passthroughLayer
       value: 

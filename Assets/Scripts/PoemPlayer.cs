@@ -11,53 +11,51 @@ public class PoemPlayer : MonoBehaviour
     [SerializeField] float fadeDuration = 2f;
     private PoeticSphere currentPoeticSphere;
 
+    private static PoemPlayer instance;
+    public static PoemPlayer Instance => instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
     private void OnEnable()
     {
-        snapZone.WhenSelectingInteractorAdded.Action += PlayPoem;
-        snapZone.WhenSelectingInteractorRemoved.Action += StopPoem;
+        // snapZone.WhenSelectingInteractorAdded.Action += PlayPoem;
+        // snapZone.WhenSelectingInteractorRemoved.Action += StopPoem;
     }
 
 
 
     private void OnDisable()
     {
-        snapZone.WhenSelectingInteractorAdded.Action -= PlayPoem;
-        snapZone.WhenSelectingInteractorRemoved.Action -= StopPoem;
-    }
-
-    public void OnSelect()
-    {
-        
-    }
-
-
-
-    public void OnDeselect()
-    {
+        // snapZone.WhenSelectingInteractorAdded.Action -= PlayPoem;
+        // snapZone.WhenSelectingInteractorRemoved.Action -= StopPoem;
     }
     
-    private void PlayPoem(SnapInteractor snapInteractor)
+    public void PlayPoem(AudioClip audioClip)
     {
         GameManager.Instance.StartPassthroughFadeToBlack(fadeDuration);
-        currentPoeticSphere = snapInteractor.GetComponentInParent<PoeticSphere>();
-        if (!audioSource || !currentPoeticSphere) return;
-        audioSource.clip = currentPoeticSphere.CurrentPoem.AudioClip;
+        if (!audioSource) return;
+        audioSource.clip = audioClip;
         audioSource.Play();
     }
 
-
-
-    private void StopPoem(SnapInteractor obj)
+    public void StopPoem()
     {
         GameManager.Instance.StartPassthroughFadeToOriginal(fadeDuration);
         audioSource.Stop();
         audioSource.clip = null;
-        currentPoeticSphere = null;
     }
 
-
-
-    public bool HasPoem => currentPoeticSphere != null;
+    // public bool HasPoem => currentPoeticSphere != null;
+    
 }

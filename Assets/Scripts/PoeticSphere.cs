@@ -17,6 +17,7 @@ public class PoeticSphere : MonoBehaviour
     [SerializeField] float delayReturn = 10f;
     [SerializeField] private float returnForce = 0.02f;
     [SerializeField] Rigidbody rb;
+    [SerializeField] private float scaleSizeFactor = 2f;
 
     private Poem currentPoem;
     private GameObject currentOrb;
@@ -24,11 +25,17 @@ public class PoeticSphere : MonoBehaviour
     private float timer;
     public Poem CurrentPoem => currentPoem;
     private bool isReturning;
+    private Vector3 originalScaleSize;
+    private Vector3 bigScaleSize;
+    private bool isPlayingPoem;
 
     void Start()
     {
         // if (snapZone) snapZone.transform.SetParent(null);
         originalPosition = transform.position;
+        originalScaleSize = transform.localScale;
+        bigScaleSize = transform.localScale * scaleSizeFactor;
+        
         currentPoem = GameManager.Instance.GetRandomPoem();
         // label.playerHead = GameManager.Instance.PlayerHead;
         SpawnRandomOrb();
@@ -39,6 +46,16 @@ public class PoeticSphere : MonoBehaviour
     private void Update()
     {
         LookTowardsPlayer();
+        if(!isPlayingPoem && transform.localScale == bigScaleSize)
+        {
+            isPlayingPoem = true;
+            PoemPlayer.Instance.PlayPoem(currentPoem.AudioClip);
+        }
+        if (isPlayingPoem && transform.localScale == originalScaleSize)
+        {
+            isPlayingPoem = false;
+            PoemPlayer.Instance.StopPoem();
+        }
     }
 
     private void FixedUpdate()

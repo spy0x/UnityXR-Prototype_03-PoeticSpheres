@@ -629,6 +629,7 @@ MonoBehaviour:
   delayReturn: 5
   returnForce: 0.05
   rb: {fileID: 5612426657955764116}
+  scaleSizeFactor: 1.4
 --- !u!114 &7726880783536149450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,17 +908,17 @@ MonoBehaviour:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 2
+        Max: 1.4
     YAxis:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 2
+        Max: 1.4
     ZAxis:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 2
+        Max: 1.4
 --- !u!1 &6520242934249243721
 GameObject:
   m_ObjectHideFlags: 0
