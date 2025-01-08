@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Meta.XR.MRUtilityKit;
 using NUnit.Framework;
@@ -9,10 +10,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] Poem[] poems;
     [SerializeField] int poemsPerGame = 3;
     [SerializeField] FindSpawnPositions findSpawnPositions;
+    [SerializeField] OVRPassthroughLayer passthroughLayer;
 
     private List<Poem> usedPoems = new List<Poem>();
     private static GameManager instance;
     public static GameManager Instance => instance;
+    private float originalBrightness;
 
     private void Awake()
     {
@@ -25,6 +28,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         findSpawnPositions.SpawnAmount = poemsPerGame;
+    }
+    private void Start()
+    {
+        originalBrightness = passthroughLayer.colorMapEditorBrightness;
     }
 
     public Poem GetRandomPoem()
@@ -43,5 +50,42 @@ public class GameManager : MonoBehaviour
 
         usedPoems.Add(poem);
         return poem;
+    }
+    private IEnumerator PassthroughFadeToBlack(float fadeDuration)
+    {
+        float lerp = 0;
+        float currentBrightness = passthroughLayer.colorMapEditorBrightness;
+        while (lerp < 1)
+        {
+            lerp += Time.deltaTime / fadeDuration;
+            passthroughLayer.colorMapEditorBrightness = Mathf.Lerp(currentBrightness, -1, lerp);
+            yield return null;
+        }
+        passthroughLayer.colorMapEditorBrightness = -1;
+        yield return null;
+    }
+    private IEnumerator PassthroughFadeToOriginal(float fadeDuration)
+    {
+        float lerp = 0;
+        float currentBrightness = passthroughLayer.colorMapEditorBrightness;
+        while (lerp < 1)
+        {
+            lerp += Time.deltaTime / fadeDuration;
+            passthroughLayer.colorMapEditorBrightness = Mathf.Lerp(currentBrightness, originalBrightness, lerp);
+            yield return null;
+        }
+        passthroughLayer.colorMapEditorBrightness = originalBrightness;
+        yield return null;
+    }
+    
+    public void StartPassthroughFadeToBlack(float fadeDuration)
+    {
+        StopAllCoroutines();
+        StartCoroutine(PassthroughFadeToBlack(fadeDuration));
+    }
+    public void StartPassthroughFadeToOriginal(float fadeDuration)
+    {
+        StopAllCoroutines();
+        StartCoroutine(PassthroughFadeToOriginal(fadeDuration));
     }
 }

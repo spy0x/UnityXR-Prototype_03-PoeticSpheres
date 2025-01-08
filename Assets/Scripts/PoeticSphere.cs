@@ -8,7 +8,8 @@ public class PoeticSphere : MonoBehaviour
 {
     [SerializeField] SnapInteractable snapZone;
     [SerializeField] GameObject[] orbPrefabs;
-    [SerializeField] private PointableUnityEventWrapper unityEvent;
+    [SerializeField] AudioTrigger grabAudioTrigger;
+    [SerializeField] private AudioSource audioSource;
 
     private Poem currentPoem;
     private GameObject currentOrb;
@@ -26,5 +27,11 @@ public class PoeticSphere : MonoBehaviour
         if (orbPrefabs.Length == 0) return;
         var prefab = orbPrefabs[Random.Range(0, orbPrefabs.Length)];
         currentOrb = Instantiate(prefab, transform.position, Quaternion.identity, transform);
+    }
+
+    public void PlayGrabSound(PointerEvent pointerEvent)
+    {
+        if (audioSource.isPlaying) return;
+        grabAudioTrigger.PlayAudio();
     }
 }

@@ -404,6 +404,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _handGrabState: {fileID: 8452552027527216901}
   _syntheticHand: {fileID: 0}
+--- !u!1 &436893625486953564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330947030730263469}
+  - component: {fileID: 2601640840373228127}
+  m_Layer: 0
+  m_Name: ReverbZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1330947030730263469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436893625486953564}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8455490480245281764}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2601640840373228127
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436893625486953564}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &670422541064739101
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: dafff979-b888-48f4-b03e-8a38c00df0b6
+  instanceId: abf3b5d4-844a-4553-b856-6944683740de
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -4304,7 +4357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 3bc7833e-32c8-4982-ab8c-6a9edb09bf2d
+  instanceId: deae5274-3ff8-461b-b4d9-6d36cb6975c2
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -5993,7 +6046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 6b67162c-2460-4766-a931-980388647573
-  instanceId: a4941a18-1f0f-4e07-a960-4f410e9b948e
+  instanceId: 2461c5f9-e9c2-4596-8c2b-65f4e584e3b9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6027,7 +6080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 316c5b1d-a5e4-49f2-a663-15fd22dbcba9
-  instanceId: 256e3d6f-43f1-4abf-b4ac-d1f8d02ec2cf
+  instanceId: d43fc539-5516-4b3d-9d0b-66e11a758f20
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6161,7 +6214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 6b67162c-2460-4766-a931-980388647573
-  instanceId: 54f5239d-5c4c-4c59-880b-a2f812d34dd9
+  instanceId: 8246bed7-3d1a-4982-821e-8ff4c0579a4a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6200,7 +6253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 316c5b1d-a5e4-49f2-a663-15fd22dbcba9
-  instanceId: 5e715206-9a1a-460f-a205-e44eb7f4286c
+  instanceId: b5b49566-07c7-4d00-a6f9-820bd5bb26d3
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6642,7 +6695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 81f55626-5fad-45e9-a1df-184f330da7ba
-  instanceId: eb8d606e-c1a9-48f0-afca-262d9151c664
+  instanceId: 7e5a37eb-5218-42a7-8ccb-09a1780277ac
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7176,7 +7229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 0393ca30-f2a9-4865-a40f-f9a68d01c3a9
-  instanceId: 2584a589-5b16-4bf0-86a0-e9e3eb6f9b21
+  instanceId: 132f2609-f994-4af9-920f-2f80d0d4a8e9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7600,15 +7653,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2822538732192468969, guid: 3aca65f18507fca41bcd21bff79370b0, type: 3}
   m_PrefabInstance: {fileID: 5959247246178835946}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9188392415582812128 stripped
+--- !u!114 &8913876749866895839 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3256320183534496266, guid: 3aca65f18507fca41bcd21bff79370b0, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2956345291585410101, guid: 3aca65f18507fca41bcd21bff79370b0, type: 3}
   m_PrefabInstance: {fileID: 5959247246178835946}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0ad4ecf30771d44bf163058922924b, type: 3}
+  m_Script: {fileID: 11500000, guid: 541fbf3911be1a94082826f3c77bb2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7648565478121082512
@@ -7807,6 +7860,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8473755562430681603}
+    - targetCorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1330947030730263469}
     - targetCorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1040305610469138968}
@@ -7929,7 +7985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: a914c1aa-88d9-428d-a054-17be59667486
+  instanceId: 8472ba7b-6014-40b3-81cb-47569f76bd1a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8070,7 +8126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8042310bf8567b4ebd2144274ee62ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundedBoxProperties: {fileID: 9188392415582812128}
+  poemPlayer: {fileID: 8913876749866895839}
 --- !u!1 &8455490480244798734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 113768, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
@@ -8109,7 +8165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8042310bf8567b4ebd2144274ee62ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundedBoxProperties: {fileID: 9188392415582812128}
+  poemPlayer: {fileID: 8913876749866895839}
 --- !u!4 &8455490480245213856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
