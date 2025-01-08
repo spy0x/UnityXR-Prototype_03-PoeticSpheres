@@ -548,7 +548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf370cc7a7ceca4b976b30d7a64e260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapZone: {fileID: 3912238617886648527}
   orbPrefabs:
   - {fileID: 6253571692222842808, guid: b125416bd10e1984b82c0faf844b898f, type: 3}
   - {fileID: 6967601252331212698, guid: 1300b7ed193eaf24cbd403b09afb069f, type: 3}
@@ -560,6 +559,9 @@ MonoBehaviour:
   audioSource: {fileID: 3859684022776498910}
   label: {fileID: 3900843113357329834}
   labelText: {fileID: 3900843112310307951}
+  delayReturn: 5
+  returnForce: 0.05
+  rb: {fileID: 5612426657955764116}
 --- !u!114 &7726880783536149450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,9 +635,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3971520870306262248}
+        m_TargetAssemblyTypeName: PoeticSphere, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3971520870306262248}
+        m_TargetAssemblyTypeName: PoeticSphere, Assembly-CSharp
+        m_MethodName: OnDeselect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -945,7 +971,7 @@ MonoBehaviour:
   _distanceThreshold: 0.01
   _snapPoseTransform: {fileID: 0}
   _defaultInteractable: {fileID: 0}
-  _timeOutInteractable: {fileID: 3912238617886648527}
+  _timeOutInteractable: {fileID: 0}
   _timeOut: 10
 --- !u!114 &3814481226551399427
 MonoBehaviour:
