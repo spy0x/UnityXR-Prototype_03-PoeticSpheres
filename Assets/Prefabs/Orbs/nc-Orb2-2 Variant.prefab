@@ -9,12 +9,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 54832061517476069, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54832061517476069, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 620844690892353519, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 620844690892353519, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155490670009999118, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155490670009999118, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155490670009999118, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1155490670009999118, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,6 +76,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1155490670009999118, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2351117438306767086, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: m_Name
       value: nc-Orb2-2 Variant
@@ -71,6 +95,10 @@ PrefabInstance:
     - target: {fileID: 2736109456079926862, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743207332402552186, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: scalingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743207332402552186, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -99,6 +127,10 @@ PrefabInstance:
     - target: {fileID: 7460343033636480173, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629372367187024658, guid: b3eb9c9c9a52b8c4295ba57e51828b6f, type: 3}
+      propertyPath: scalingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

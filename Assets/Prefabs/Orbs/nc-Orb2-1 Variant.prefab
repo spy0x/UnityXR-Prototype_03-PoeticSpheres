@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2572079438656127574, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2572079438656127574, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
       objectReference: {fileID: 0}
@@ -67,6 +71,18 @@ PrefabInstance:
     - target: {fileID: 3239572244524753517, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771864266084023073, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771864266084023073, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771864266084023073, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3771864266084023073, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
       propertyPath: m_LocalPosition.x
@@ -117,12 +133,24 @@ PrefabInstance:
       value: nc-Orb2-1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6565560464971477051, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565560464971477051, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7239767015645232714, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239767015645232714, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361514787518480109, guid: e941b9c5b8f02f145bb49b2f08d8c287, type: 3}
+      propertyPath: scalingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
