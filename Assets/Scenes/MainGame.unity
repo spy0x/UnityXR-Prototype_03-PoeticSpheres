@@ -676,7 +676,7 @@ MonoBehaviour:
   SpawnAmount: 20
   MaxIterations: 1000
   SpawnLocations: 0
-  Labels: 0
+  Labels: -1
   CheckOverlaps: 0
   OverrideBounds: -1
   LayerMask:
@@ -829,6 +829,14 @@ PrefabInstance:
       propertyPath: poemPlayer
       value: 
       objectReference: {fileID: 1416717629}
+    - target: {fileID: 8435490786468258794, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967263
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435490788496424048, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967263
+      objectReference: {fileID: 0}
     - target: {fileID: 8455490480244789186, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
       propertyPath: m_Name
       value: OVRCameraRig Variant
@@ -882,6 +890,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+--- !u!4 &1503694392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8455490480245281764, guid: c0b256414a62bf34694681e19edd3eb2, type: 3}
+  m_PrefabInstance: {fileID: 1503694391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003587231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2012842404293247258, guid: dcffffc25b6d3b24394be5b2843d42f1, type: 3}
+      propertyPath: playerHead
+      value: 
+      objectReference: {fileID: 1503694392}
     - target: {fileID: 2012842404293247258, guid: dcffffc25b6d3b24394be5b2843d42f1, type: 3}
       propertyPath: passthroughLayer
       value: 

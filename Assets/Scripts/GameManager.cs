@@ -11,11 +11,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] int poemsPerGame = 3;
     [SerializeField] FindSpawnPositions findSpawnPositions;
     [SerializeField] OVRPassthroughLayer passthroughLayer;
+    [SerializeField] private Transform playerHead;
 
     private List<Poem> usedPoems = new List<Poem>();
     private static GameManager instance;
-    public static GameManager Instance => instance;
     private float originalBrightness;
+    public static GameManager Instance => instance;
+    public Transform PlayerHead => playerHead;
 
     private void Awake()
     {
