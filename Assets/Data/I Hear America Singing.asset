@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63328dd820e0dee45b81d2263cc7b817, type: 3}
+  m_Name: I Hear America Singing
+  m_EditorClassIdentifier: 
+  title: I Hear America Singing
+  author: WALT WHITMAN
+  speaker: Richard Rodriguez
+  text: 
+  audioClip: {fileID: 8300000, guid: 5e00a17187851d045ba21746c3d142d2, type: 3}

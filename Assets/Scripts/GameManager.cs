@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         while (lerp < 1)
         {
             lerp += Time.deltaTime / fadeDuration;
-            passthroughLayer.colorMapEditorBrightness = Mathf.Lerp(currentBrightness, -1, lerp);
+            passthroughLayer.colorMapEditorBrightness = Mathf.Lerp(currentBrightness, -0.9f, lerp);
             yield return null;
         }
         passthroughLayer.colorMapEditorBrightness = -1;

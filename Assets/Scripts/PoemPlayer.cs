@@ -13,6 +13,7 @@ public class PoemPlayer : MonoBehaviour
 
     private static PoemPlayer instance;
     public static PoemPlayer Instance => instance;
+    public AudioSource PublicAudioSource => audioSource;
 
     private void Awake()
     {

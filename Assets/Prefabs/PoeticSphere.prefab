@@ -72,7 +72,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3246136384450529923}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
   m_Name: 
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3246136384450529923}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3246136384450529923}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
   m_Name: 
@@ -537,7 +537,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!114 &604381543884093398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +622,11 @@ MonoBehaviour:
   - {fileID: 2679988961305274512, guid: f9ba98986517e6145b1cf49beb67eebe, type: 3}
   - {fileID: 3470911004876511417, guid: 8b3e121c883f8f24a8c21a089d759d91, type: 3}
   - {fileID: 3178359198666230998, guid: 7046afd53d9b5bb408043bc86918eecc, type: 3}
+  - {fileID: 8894679684470351688, guid: 060b4e7daaaae6a46b24342f894538f9, type: 3}
+  - {fileID: 271120849116204624, guid: cd18d8f6bdcec7c429d4d1a13e95e150, type: 3}
+  - {fileID: 1525337026748467850, guid: f60213c709c8c814db23e0efc5d7c562, type: 3}
+  - {fileID: 5031262020683267601, guid: 056cefb74cd74ab4da5367c08f47b98f, type: 3}
+  - {fileID: 7695091722481975539, guid: 08853abcce37c4743adfcc26a6f48023, type: 3}
   grabAudioTrigger: {fileID: 4470150532260520690}
   audioSource: {fileID: 3859684022776498910}
   label: {fileID: 3900843113357329834}
@@ -629,7 +634,9 @@ MonoBehaviour:
   delayReturn: 5
   returnForce: 0.05
   rb: {fileID: 5612426657955764116}
-  scaleSizeFactor: 1.4
+  scaleSizeFactor: 1.75
+  returnScaleSpeed: 0.1
+  labelMinDistance: 0.5
 --- !u!114 &7726880783536149450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,10 +656,10 @@ MonoBehaviour:
   _whenHover:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3900843113357329834}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3971520870306262248}
+        m_TargetAssemblyTypeName: PoeticSphere, Assembly-CSharp
+        m_MethodName: OnHover
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -664,10 +671,10 @@ MonoBehaviour:
   _whenUnhover:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3900843113357329834}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3971520870306262248}
+        m_TargetAssemblyTypeName: PoeticSphere, Assembly-CSharp
+        m_MethodName: OnUnhover
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -908,17 +915,17 @@ MonoBehaviour:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 1.4
+        Max: 1.75
     YAxis:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 1.4
+        Max: 1.75
     ZAxis:
       ConstrainAxis: 1
       AxisRange:
         Min: 1
-        Max: 1.4
+        Max: 1.75
 --- !u!1 &6520242934249243721
 GameObject:
   m_ObjectHideFlags: 0

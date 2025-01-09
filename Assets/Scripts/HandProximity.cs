@@ -12,23 +12,28 @@ public class HandProximity : MonoBehaviour
     {
         // poemPlayer.gameObject.SetActive(false);
     }
-    
+
+    private PoeticSphere sphere;
 
     private void OnTriggerEnter(Collider other)
     {
-        // if (other.CompareTag("PoeticSphere"))
-        // {
-        //     if (sphereCount == 0) poemPlayer.gameObject.SetActive(true);
-        //     sphereCount++;
-        // }
+        if (other.CompareTag("PoeticSphere"))
+        {
+            sphereCount++;
+            sphere = other.GetComponent<PoeticSphere>();
+            sphere.CanShowLabel = false;
+            sphere.SetLabelActive(false); 
+        }
     }
+    
 
     private void OnTriggerExit(Collider other)
     {
-        // if (other.CompareTag("PoeticSphere"))
-        // {
-        //     sphereCount--;
-        //     if (sphereCount == 0 && !poemPlayer.HasPoem) poemPlayer.gameObject.SetActive(false);
-        // }
+        if (other.CompareTag("PoeticSphere"))
+        {
+            sphereCount--;
+            if (sphereCount != 0) return;
+            sphere.CanShowLabel = true;
+        }
     }
 }
