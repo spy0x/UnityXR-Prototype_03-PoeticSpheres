@@ -1,5 +1,7 @@
 # 🌌 Poetic Spheres - XR Meditation Experience  
 
+![Poetic Spheres GIF](/poetic_spheres.gif "Poetic Spheres GIF")
+
 ## ✨ Idea  
 **Elevator Pitch:**  
 *"What if poetry could surround you—literally? A sanctuary where verses float in your space, waiting to be touched and heard."*  
